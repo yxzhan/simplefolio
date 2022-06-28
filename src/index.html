@@ -30,7 +30,7 @@
   <script defer src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
   <!-- Todo: remove the below script once you finish your portfolio -->
-  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <!-- <script async defer src="https://buttons.github.io/buttons.js"></script> -->
 </head>
 
 <!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
@@ -102,22 +102,30 @@
               <h3 class="project-wrapper__text-title">Grains Detection</h3>
               <div>
                 <p class="mb-4">
+                  A machine learning project while doing a student job at a university research institute <a
+                    href="https://www.bik.uni-bremen.de/" target="_blank">BIK</a>.
+                  The objective is to use computer vision technology to detect whether the grains (animal feed) passing
+                  through the conveyor belt are sufficiently crushed and thus adjust the parameters of the crusher. </p>
+                <p class="mb-4">
+                  My main task is to retrain multiple neural network models (SSD, RCNN) with the grains images using
+                  Tensorflow's object detection API. Making the models capable of detecting and classifying four
+                  different grains (Triticale, Roggen, Weizen and Mais) accurately in the images. Wrapping the
+                  well-trained models and runtime environment in docker images and deploying them to a server for
+                  real-time detection.
                 </p>
               </div>
-              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="#!">
+              <!-- <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="#!">
                 Watch Video
-              </a>
+              </a> -->
             </div>
           </div>
           <div class="col-lg-8 col-sm-12">
             <div class="project-wrapper__image load-hidden">
-              <a rel="noreferrer" href="#!" target="_blank">
-                <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
-                  class="thumbnail rounded js-tilt">
-                  <img alt="Project Image" class="img-fluid" src="assets/grains.jpg" />
-                  <video width="300" class="img-fluid" controls src="assets/grains.mp4"></video>
-                </div>
-              </a>
+              <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
+                class="thumbnail rounded js-tilt">
+                <!-- <img alt="Project Image" class="img-fluid" src="assets/grains.jpg" /> -->
+                <video class="img-fluid" controls src="assets/grains.mp4"></video>
+              </div>
             </div>
           </div>
         </div>
@@ -130,29 +138,35 @@
               <h3 class="project-wrapper__text-title">Waste Material Classification</h3>
               <div>
                 <p class="mb-4">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Excepturi neque, ipsa animi maiores repellendus distinctio
-                  aperiam earum dolor voluptatum consequatur blanditiis
-                  inventore debitis fuga numquam voluptate ex architecto
-                  itaque molestiae.
+                  My other machine learning project at the institute BIK. Attempt to classify five waste materials
+                  (Cardboard, Shredded Paper, Plastic Foil, and Pamphlet) using machine learning methods.
+                </p>
+                <p class="mb-4">
+                  Semi-supervised and unsupervised learning methods were used in this project to classify the waste
+                  material images. Test the semi-supervised learning method proposed by <a target="_blank"
+                    href="https://vision.in.tum.de/_media/spezial/bib/haeusser_cvpr_17.pdf">Philip Haeusser</a> to
+                  classify the
+                  current dataset. Clustering the dataset using unsupervised methods such as autoencoder. Analyze
+                  clustering performance by dimension reduction and visualizing image embeddings using multiple
+                  algorithms (LDA, PCA, t-SNE).
                 </p>
               </div>
-              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="#!">
+              <!-- <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="#!">
                 See Live
               </a>
               <a rel="noreferrer" target="_blank" class="cta-btn text-color-main" href="#!">
                 Source Code
-              </a>
+              </a> -->
             </div>
           </div>
           <div class="col-lg-8 col-sm-12">
             <div class="project-wrapper__image load-hidden">
-              <a rel="noreferrer" href="#!" target="_blank">
-                <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
-                  class="thumbnail rounded js-tilt">
-                  <img alt="Project Image" class="img-fluid" src="assets/project.jpg" />
-                </div>
-              </a>
+              <!-- <a rel="noreferrer" href="#!" target="_blank"> -->
+              <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
+                class="thumbnail rounded js-tilt">
+                <img alt="Project Image" class="img-fluid" src="assets/waste-sm.png" />
+              </div>
+              <!-- </a> -->
             </div>
           </div>
         </div>
@@ -241,7 +255,8 @@
     <div class="container">
       <h2 class="section-title">Contact</h2>
       <div class="contact-wrapper load-hidden">
-        <p class="contact-wrapper__text">Email: zhanyanxiang@hotmail.com</p>
+        <p class="contact-wrapper__text">Email: <a href="mailto:zhanyanxiang@hotmail.com">zhanyanxiang@hotmail.com</a>
+        </p>
         <p class="contact-wrapper__text">Mobile Phone:+49 1636821634</p>
         <p class="contact-wrapper__text">Address: Bremen, Germany</p>
         <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--resume"
